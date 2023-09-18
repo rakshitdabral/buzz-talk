@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,100;1,600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+.middle{
+  position: relative;
+}
+
+.mouse{
+  border: 2px solid #9c4bccff ;
+  @apply w-[50px] h-[80px] rounded-full bg-transparent sm:mt-6 mt-12 
+}
+
+.mouse::before{
+  content: "";
+  left: 50%;
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+  transform: translateX(-50%);
+  @apply w-[25px] h-[25px] absolute top-[30px] bg-[#9c4bccff] 
+}
+
+@keyframes mouse{
+  from{
+    opacity: 1;
+    top: 30px;
+  }
+  to{
+    opacity: 0;
+    top: 70px;
+  }
+}
