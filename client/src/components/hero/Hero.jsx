@@ -4,7 +4,6 @@ function Hero() {
   return (
     <>
       <div
-        
         className={`${styles.paddingX} min-h-[100vh]  loading="eager"   bg-hero-pattern bg-cover bg-no-repeat w-full`}
       >
         <div className="w-full flex flex-col  py-[100px] justify-between items-center max-w-7xl mx-auto">
