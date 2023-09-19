@@ -1,6 +1,6 @@
 import Navbar from "../../components/navbar/Navbar";
 import Hero from "../../components/hero/Hero";
-import HomeBody from "../../components/homebody/HomeBody";
+import HomeBody from "../../components/homebody/Homebody";
 import { bodyContent } from "../../constants/bodyContent";
 import Homebodybottom from "../../components/homebody/Homebodybottom";
 import Footer from "../../components/footer/Footer";
