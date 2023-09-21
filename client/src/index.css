@@ -33,6 +33,13 @@
   @apply w-[25px] h-[25px] absolute top-[30px] bg-[#9c4bccff] 
 }
 
+.required::after{
+  content: "*";
+  color: red;
+  margin-left: 3px;
+  font-size: 12px;
+}
+
 @keyframes mouse{
   from{
     opacity: 1;

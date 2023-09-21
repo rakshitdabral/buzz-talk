@@ -1,11 +1,8 @@
-import Home from "../src/pages/home/Home"
-
-function App() {
+import AppRoutes from "./routes/AppRoutes.jsx";
+const App = () => {
   return (
-    <>
-      <Home/>
-    </>
-  )
-}
+    <AppRoutes/>
+  );
+};
 
-export default App
+export default App;

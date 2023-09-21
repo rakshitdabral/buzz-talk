@@ -42,8 +42,8 @@ function HomeBody(props) {
             isOdd ? "sm:flex-row-reverse" : "sm:flex-row"
           } w-full flex  flex-col p-5  justify-around items-center `}
         >
-          <div>
-            <img loading="lazy" src={props.src} alt={props.alt}></img>
+          <div >
+            <img  className="w-[376px] h-[380px]" loading="lazy" src={props.src} alt={props.alt}></img>
           </div>
           <div className="sm:mt-0 mt-6">
             <div className="flex  justify-start items-start flex-col">

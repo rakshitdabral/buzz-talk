@@ -13,7 +13,7 @@ function Homebodybottom() {
             Experience seamless video conferencing with our web app – where
             intelligence meets crisp clarity for your virtual meetings
           </p>
-          <img src={fourth} alt="video-call"></img>
+          <img className="w-[376px] h-[380px]" src={fourth} alt="video-call"></img>
         </div>
       </div>
     </>

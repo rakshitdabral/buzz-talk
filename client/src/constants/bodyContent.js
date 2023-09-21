@@ -20,9 +20,8 @@ export const bodyContent = [
     },{
         id:3,
         src : Three,
-        alt : "video call",
-        title : "Face-to-Face",
-        desc : "Experience the future of communication with our web app's seamless video call feature. Connect with friends, family, or colleagues in real-time, no matter where you are"
-    
+        alt : "Organised",
+        title : "Friends Forever Fun",
+        desc : "We've designed this platform to bring people together and foster lasting friendships through seamless and enjoyable conversations"
     }
 ]
