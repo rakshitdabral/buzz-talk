@@ -4,8 +4,13 @@ import { styles } from "../../styles";
 import { navLinks } from "../../constants/navLinks";
 import close from "../../assets/close.svg";
 import menu from "../../assets/menu.svg";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: 12 },
+  };
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
@@ -33,9 +38,9 @@ const Navbar = () => {
             </li>
           ))}
           <Link to="/login">
-          <button className="bg-white  lg:items-center justify-center flex hover:text-[#3C096C] hover:drop-shadow-3xl text-black text-sm    py-2  w-[180px] font-bold border rounded-full">
-            Login
-          </button>
+            <button className="bg-white  lg:items-center justify-center flex hover:text-[#3C096C] hover:drop-shadow-3xl text-black text-sm    py-2  w-[180px] font-bold border rounded-full">
+              Login
+            </button>
           </Link>
         </ul>
 
@@ -56,7 +61,9 @@ const Navbar = () => {
             }w-[28px] h-[28px]  object-contain cursor-pointer z-50`}
           ></img>
 
-          <div
+          <motion.div
+          variants={variants}
+          animate={toggle ? "open" : "closed"}
             className={`${
               !toggle ? "hidden" : "flex"
             } p-6  bg-white absolute top-[-2px] pt-[24px] pr-[48px] pb-[120px] pl-[24px]  right-0 h-[100vh] overflowy-auto min-w-[330px] z-10 rounded-l-xl`}
@@ -82,7 +89,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </div>
       </div>
     </nav>

@@ -11,7 +11,7 @@ function Loginbox() {
           opacity: 1,
           scale: 1,
         }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
+        transition={{ duration: 0.2, ease: "easeInOut" }}
         className="flex  sm:h-screen  justify-center items-center "
       >
         <figure className="bg-[#313338] sm:w-[500px] w-full h-auto  rounded-xl p-8 dark:bg-slate-800 ">

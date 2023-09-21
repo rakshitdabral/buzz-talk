@@ -1,4 +1,5 @@
 import { styles } from "../../styles";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -14,9 +15,11 @@ function Hero() {
             With our cutting-edge chatting app, staying connected with friends,
             family, and colleagues has never been easier or more enjoyable.
           </p>
+          <Link to="/register">
           <button className="bg-white hover:text-[#7B2CBF] hover:drop-shadow-3xl text-black font-normal antialiased py-4 px-12 mt-12 rounded-full">
             Get Started
           </button>
+          </Link>
           <div className="middle">
             <div className="mouse" />
           </div>
