@@ -26,13 +26,13 @@ const Navbar = () => {
       className={`${styles.paddingNav} w-full flex item-center py-5  top-0 z-20 bg-[#e7b1fcff]`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl sm:mx-auto sm:px-0 px-6">
-        <h1 className="font-bold text-2xl mx-3 my-3 text-white">BuzzTalk</h1>
+        <h1 className="font-bold text-2xl mx-3 my-3 text-black">BuzzTalk</h1>
 
         <ul className="hidden flex-row lg:flex items-center  justify-center   gap-10 list-none">
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className="hover:underline text-white text-[18px] font-medium cursor-pointer"
+              className="hover:underline text-black text-[18px] font-medium cursor-pointer"
             >
               {link.title}
             </li>
