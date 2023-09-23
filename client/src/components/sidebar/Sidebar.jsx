@@ -10,7 +10,7 @@ function Sidebar() {
   return (
     <>
       <div className="w-[96px] h-[100vh] border-r-2 border-[#E3E8E7] flex items-start justify-center py-[32px]">
-        <div className="flex sm:justify-between justify-start gap-6 flex-col items-center  h-full">
+        <div className="flex md:justify-between justify-start gap-6 flex-col items-center  h-full">
           <div className="h-[44px] w-[44px] rounded-full bg-[#0f172a] "></div>
           <div className="flex justify-between flex-col items-center gap-12 ">
             <div className="cursor-pointer">
