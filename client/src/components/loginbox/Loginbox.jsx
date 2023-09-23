@@ -39,9 +39,11 @@ function Loginbox() {
           <a className="text-[#0b8dcf]" href="#">
             Forgot your password?
           </a>
-          <button className=" capitalize mt-4 h-[40px] mb-6 flex justify-center items-center text-white bg-[#0b8dcf] rounded-sm w-full">
-            Log In
-          </button>
+          <Link to="/ui">
+            <button className=" capitalize mt-4 h-[40px] mb-6 flex justify-center items-center text-white bg-[#0b8dcf] rounded-sm w-full">
+              Log In
+            </button>
+          </Link>
           <p className="text-[14px] text-[#777d85]">
             Need an account?{" "}
             <Link className="text-[#0b8dcf]" to="/register">
