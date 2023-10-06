@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const express = require('express');
 const app = express()
+const cors = require('cors')
+
 
 // dotenv config
 dotenv.config();
@@ -20,6 +22,10 @@ const conversationRouter = require("./routes/conversation-route");
 const messageRouter = require("./routes/message-route");
 
 //middleware
+app.use(cors({
+    origin: '*',
+    methods:["GET","POST","PUT","DELETE"],
+}))
 app.use(express.json())
 app.use(express.json())
 app.use(userRouter)
